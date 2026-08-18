@@ -1,0 +1,40 @@
+:root{--b:#85082b;--bd:#69051f;--cream:#fbf8f3;--ink:#28201e;--muted:#6f625d}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Montserrat,Arial,sans-serif}a{color:inherit}.hero{height:100svh;min-height:720px;max-height:980px;position:relative;display:grid;align-items:center;background:url("assets/hero.webp") center/cover no-repeat}.overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,10,6,.02),rgba(20,10,6,.08) 44%,rgba(20,10,6,.36))}.hero-copy{position:relative;z-index:1;width:min(620px,42vw);margin-left:53%;text-align:center;color:white;text-shadow:0 2px 20px #0005}h1{margin:0;font:600 clamp(66px,6vw,108px)/.82 "Cormorant Garamond",serif;letter-spacing:-.035em}.orn{display:flex;align-items:center;gap:14px;max-width:410px;margin:27px auto 17px}.orn span{height:1px;flex:1;background:#ffffffcc}.orn b{font-size:23px;font-weight:400}.tag{margin:0 0 34px;text-transform:uppercase;letter-spacing:.23em;font-size:13px}.tag i{font-style:normal;padding:0 7px}.cta{display:inline-block;padding:17px 28px;background:var(--b);border-radius:4px;text-decoration:none;text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:600;box-shadow:0 10px 30px #46001447;transition:.2s}.cta:hover{background:var(--bd);transform:translateY(-2px)}.about-social{width:min(1260px,calc(100% - 48px));margin:auto;display:grid;grid-template-columns:1.05fr 1.95fr;gap:60px;align-items:center;padding:72px 0 68px}.about h2{margin:0;color:var(--b);text-transform:uppercase;letter-spacing:.24em;font-size:17px}.mini{width:48px;height:1px;background:var(--b);margin:16px 0 25px}.about p{margin:0 0 10px;line-height:1.75;font-size:15px;max-width:500px}.sign{margin-top:27px;color:var(--b);font:italic 500 37px "Cormorant Garamond",serif}.socials{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.socials article{text-align:center;padding:18px 8px}.icon{width:112px;height:112px;margin:0 auto 16px;background:var(--b);color:white;border-radius:7px;display:grid;place-items:center}.icon svg{width:60px;height:60px}.fanvue{font:italic 600 62px "Cormorant Garamond",serif}.socials h3{margin:0 0 8px;font-size:15px;text-transform:uppercase;letter-spacing:.12em}.socials p{margin:0 0 18px;color:var(--muted);font-size:13px;min-height:20px}.socials a{display:inline-block;min-width:132px;padding:11px 17px;background:var(--b);color:white;text-decoration:none;border-radius:3px;text-transform:uppercase;letter-spacing:.11em;font-size:11px;font-weight:600}.gallery{width:min(1320px,calc(100% - 28px));margin:0 auto 42px;display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.gallery img{width:100%;height:100%;aspect-ratio:3/4;object-fit:cover;display:block}footer{text-align:center;padding:4px 24px 34px}.footer-social{display:flex;justify-content:center;gap:34px;margin-bottom:22px}.footer-social a{text-decoration:none;color:var(--b);font:600 28px "Cormorant Garamond",serif}.rule{max-width:900px;height:1px;background:#85082b2e;margin:0 auto 20px}footer p{margin:0;color:#665a55;font-size:12px}@media(max-width:920px){.hero{background-position:34% center}.overlay{background:linear-gradient(0deg,#1007059e,#1007050a 62%)}.hero-copy{width:calc(100% - 40px);margin:auto auto 78px;align-self:end}.about-social{grid-template-columns:1fr;gap:42px}.about{text-align:center}.mini{margin-left:auto;margin-right:auto}.about p{margin-left:auto;margin-right:auto}.socials{max-width:720px;margin:auto;width:100%}}@media(max-width:650px){.hero{background-position:29% center}.tag{font-size:10px;letter-spacing:.17em}.cta{padding:15px 18px;font-size:10px}.about-social{width:calc(100% - 24px)}.socials{grid-template-columns:1fr;gap:6px}.icon{width:96px;height:96px}.gallery{grid-template-columns:repeat(2,1fr);width:calc(100% - 14px);gap:5px}}
+/* Social logo update */
+.social-logo-link{
+  display:block;
+  width:112px;
+  height:112px;
+  margin:0 auto 16px;
+  border-radius:7px;
+  overflow:hidden;
+  text-decoration:none;
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.social-logo-link:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 22px rgba(133,8,43,.18);
+}
+.social-logo-link img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+.socials article > a:not(.social-logo-link){
+  display:none !important;
+}
+.footer-social a{
+  width:32px;
+  height:32px;
+  display:grid;
+  place-items:center;
+}
+.footer-social a img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+@media(max-width:650px){
+  .social-logo-link{width:96px;height:96px}
+}
