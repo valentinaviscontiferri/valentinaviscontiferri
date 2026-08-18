@@ -37,4 +37,5 @@
 }
 @media(max-width:650px){
   .social-logo-link{width:96px;height:96px}
+  .hero{background-position:15% center}
 }
